@@ -1,0 +1,78 @@
+<div>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef>Emp Id</th>
+      <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="firstName">
+      <th mat-header-cell *matHeaderCellDef>First Name</th>
+      <td mat-cell *matCellDef="let element">{{ element.firstName }}</td>
+    </ng-container>
+    <ng-container matColumnDef="middleName">
+      <th mat-header-cell *matHeaderCellDef>Middle Name</th>
+      <td mat-cell *matCellDef="let element">{{ element.middleName }}</td>
+    </ng-container>
+    <ng-container matColumnDef="lastName">
+      <th mat-header-cell *matHeaderCellDef>Last Name</th>
+      <td mat-cell *matCellDef="let element">{{ element.lastName }}</td>
+    </ng-container>
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef>Email</th>
+      <td mat-cell *matCellDef="let element">{{ element.email }}</td>
+    </ng-container>
+    <ng-container matColumnDef="dob">
+      <th mat-header-cell *matHeaderCellDef>DOB</th>
+      <td mat-cell *matCellDef="let element">{{ element.dob | date }}</td>
+    </ng-container>
+    <ng-container matColumnDef="gender">
+      <th mat-header-cell *matHeaderCellDef>Gender</th>
+      <td mat-cell *matCellDef="let element">{{ element.gender }}</td>
+    </ng-container>
+    <ng-container matColumnDef="education">
+      <th mat-header-cell *matHeaderCellDef>Education</th>
+      <td mat-cell *matCellDef="let element">{{ element.education }}</td>
+    </ng-container>
+    <ng-container matColumnDef="company">
+      <th mat-header-cell *matHeaderCellDef>Company</th>
+      <td mat-cell *matCellDef="let element">{{ element.company }}</td>
+    </ng-container>
+    <ng-container matColumnDef="experience">
+      <th mat-header-cell *matHeaderCellDef>Experience</th>
+      <td mat-cell *matCellDef="let element">{{ element.experience }}</td>
+    </ng-container>
+    <ng-container matColumnDef="package">
+      <th mat-header-cell *matHeaderCellDef>Package</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.package | currency : "INR" }}L
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef>Action</th>
+      <td mat-cell *matCellDef="let element">
+        <button
+          mat-icon-button
+          color="primary"
+          (click)="onClickUpdateEmployee(element.id)"
+        >
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button
+          mat-icon-button
+          color="warn"
+          (click)="onClickDeleteEmployee(element.id)"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>

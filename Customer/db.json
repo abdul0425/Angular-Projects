@@ -1,0 +1,121 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "customer": [
+    {
+      "0": {
+        "name": "Abdul Majid Alam",
+        "email": "abdul@gmail.com",
+        "address": "Bangalore",
+        "contact": 6299634638,
+        "id": 1
+      },
+      "1": {
+        "name": "Abdul Shafique Alam",
+        "email": "shafique@gmail.com",
+        "address": "Barwadih",
+        "contact": 8840258845,
+        "id": 2
+      },
+      "2": {
+        "name": "Mehmed Arsalan",
+        "email": "arsalan@gmail.com",
+        "address": "Garhwa",
+        "contact": 8102067504,
+        "id": 4
+      },
+      "3": {
+        "name": "Sasthi Mandal",
+        "email": "sasthi@gmail.com",
+        "address": "Bangalore",
+        "contact": 9568352147,
+        "id": 5
+      },
+      "id": 1
+    },
+    {
+      "name": "Abdul Shafique Alam",
+      "email": "shafique@gmail.com",
+      "address": "Barwadih",
+      "contact": 8840258845,
+      "id": 2
+    },
+    {
+      "name": "Mehmed Arsalan",
+      "email": "arsalan@gmail.com",
+      "address": "Garhwa",
+      "contact": 8102067504,
+      "id": 4
+    },
+    {
+      "0": {
+        "0": {
+          "name": "Abdul Majid Alam",
+          "email": "abdul@gmail.com",
+          "address": "Bangalore",
+          "contact": 6299634638,
+          "id": 1
+        },
+        "1": {
+          "name": "Abdul Shafique Alam",
+          "email": "shafique@gmail.com",
+          "address": "Barwadih",
+          "contact": 8840258845,
+          "id": 2
+        },
+        "2": {
+          "name": "Mehmed Arsalan",
+          "email": "arsalan@gmail.com",
+          "address": "Garhwa",
+          "contact": 8102067504,
+          "id": 4
+        },
+        "3": {
+          "name": "Sasthi Mandal",
+          "email": "sasthi@gmail.com",
+          "address": "Bangalore",
+          "contact": 9568352147,
+          "id": 5
+        },
+        "id": 1
+      },
+      "1": {
+        "name": "Abdul Shafique Alam",
+        "email": "shafique@gmail.com",
+        "address": "Barwadih",
+        "contact": 8840258845,
+        "id": 2
+      },
+      "2": {
+        "name": "Mehmed Arsalan",
+        "email": "arsalan@gmail.com",
+        "address": "Garhwa",
+        "contact": 8102067504,
+        "id": 4
+      },
+      "3": {
+        "name": "Sasthi Mandal",
+        "email": "sasthi@gmail.com",
+        "address": "Bangalore",
+        "contact": 9568352147,
+        "id": 5
+      },
+      "id": 5
+    }
+  ]
+}

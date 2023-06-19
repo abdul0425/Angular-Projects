@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employee": [
+    {
+      "firstName": "Abdul",
+      "middleName": "Majid",
+      "lastName": "Alam",
+      "email": "abdul@gmail.com",
+      "dob": "2023-05-20T18:30:00.000Z",
+      "gender": "male",
+      "company": "Techbeez Software Technologies",
+      "education": "Graduation",
+      "experience": "2",
+      "package": "4",
+      "id": 1
+    },
+    {
+      "firstName": "Sasthi",
+      "middleName": "Pado",
+      "lastName": "Mandal",
+      "email": "sasthi@gmail.com",
+      "dob": "1991-06-18T18:30:00.000Z",
+      "gender": "male",
+      "company": "Sky Formation",
+      "education": "Graduation",
+      "experience": "2",
+      "package": "3.50",
+      "id": 2
+    },
+    {
+      "firstName": "Abdul",
+      "middleName": "Shafique",
+      "lastName": "Alam",
+      "email": "shaffique@gmail.com",
+      "dob": "1992-07-30T18:30:00.000Z",
+      "gender": "male",
+      "company": "Jio Telecom",
+      "education": "Graduation",
+      "experience": "3",
+      "package": "3.00",
+      "id": 4
+    }
+  ]
+}

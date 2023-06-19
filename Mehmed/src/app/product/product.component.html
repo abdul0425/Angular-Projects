@@ -1,0 +1,21 @@
+<select name="" id="" (change)="getProductList($event)">
+  <option>--select--</option>
+  <option [value]="product" *ngFor="let product of productArray">
+    {{ product }}
+  </option>
+</select>
+
+<table>
+  <thead>
+    <td>Brand Name :</td>
+    <td>Brand Color</td>
+    <td>Brand Price</td>
+  </thead>
+  <tbody>
+    <tr *ngFor="let array of selectedProductList">
+      <td>{{ array.brandName }}</td>
+      <td>{{ array.Color }}</td>
+      <td>{{ array.Price }}</td>
+    </tr>
+  </tbody>
+</table>

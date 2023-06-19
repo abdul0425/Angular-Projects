@@ -1,0 +1,13 @@
+
+  .example-full-width {
+    width: 100%;
+  }
+  mat-card{
+    width: 900px;
+    height: auto;
+    margin: auto;
+  }
+  button{
+    margin-right: 10px;
+  }
+  
